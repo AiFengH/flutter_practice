@@ -6,13 +6,13 @@ class ImagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-        title: 'Image demo',
+        title: 'Image组件示例',
         home: Scaffold(
           appBar: AppBar(
             leading: new BackButton(
               onPressed: () {Navigator.pop(context);},
             ),
-            title: Text('Image demo'),
+            title: Text('Image组件示例'),
           ),
           body: new Center(
             child: new Image.network(

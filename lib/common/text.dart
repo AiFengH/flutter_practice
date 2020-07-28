@@ -6,13 +6,13 @@ class TextPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-        title: 'Image demo',
+        title: 'Text组件示例',
         home: Scaffold(
           appBar: AppBar(
             leading: new BackButton(
               onPressed: () {Navigator.pop(context);},
             ),
-            title: Text('Image demo'),
+            title: Text('Text组件示例'),
           ),
           body: new Column(
             children: <Widget>[

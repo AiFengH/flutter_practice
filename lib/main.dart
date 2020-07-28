@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterapp/common/bottomNavigationBar.dart';
 import 'package:flutterapp/common/container.dart';
+import 'package:flutterapp/common/drawer.dart';
 import 'package:flutterapp/common/form.dart';
 import 'package:flutterapp/common/gridView.dart';
 import 'package:flutterapp/common/horizontalListView.dart';
@@ -9,6 +11,7 @@ import 'package:flutterapp/common/iconButton.dart';
 import 'package:flutterapp/common/image.dart';
 import 'package:flutterapp/common/longListView.dart';
 import 'package:flutterapp/common/raisedButton.dart';
+import 'package:flutterapp/common/tabBar.dart';
 import 'package:flutterapp/common/text.dart';
 import 'package:flutterapp/complex/cat.dart';
 import 'package:flutterapp/complex/collection.dart';
@@ -33,6 +36,9 @@ void main() {
       LongListViewPage.name: (BuildContext context) => LongListViewPage(),
       RaisedButtonPage.name: (BuildContext context) => RaisedButtonPage(),
       TextPage.name: (BuildContext context) => TextPage(),
+      BottomNavigationBarPage.name: (BuildContext context) => BottomNavigationBarPage(),
+      DefaultTabControllerSample.name: (BuildContext context) => TabBarSample(),//DefaultTabControllerSample(),
+      DrawerPage.name: (BuildContext context) => DrawerPage(),
 
       //complex
       CatPage.name: (BuildContext context) => CatPage(),
@@ -106,7 +112,10 @@ class CommonPage extends StatelessWidget {
     ImagePage.name,
     LongListViewPage.name,
     RaisedButtonPage.name,
-    TextPage.name
+    TextPage.name,
+    BottomNavigationBarPage.name,
+    DefaultTabControllerSample.name,
+    DrawerPage.name
   ];
 
   final List<String> titles = [
@@ -119,7 +128,10 @@ class CommonPage extends StatelessWidget {
     ImagePage.title,
     LongListViewPage.title,
     RaisedButtonPage.title,
-    TextPage.title
+    TextPage.title,
+    BottomNavigationBarPage.title,
+    DefaultTabControllerSample.title,
+    DrawerPage.title
   ];
 
   CommonPage() {
